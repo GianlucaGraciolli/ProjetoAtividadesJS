@@ -6,15 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade da Idade</title>
+    <link rel="stylesheet" href="./CSS/styleIdade.css">
 </head>
 
 <body>
     <h1>Descubra sua Faixa Etária.</h1>
-    <form action="./../AtividadeIdade/index.html" method="GET" name="form-Idade">
-        <label for="nome">Insira a sua idade:</label>
-        <input type="text" name="name" id="nome">
+    <form action="./../AtividadeIdade/index.html" method="GET" name="formIdade">
+        <div>
+            <label for="id-idade">Insira a sua idade:</label>
+            <input type="number" name="idade" id="id-idade"
+            placeholder="Digite sua idade...">
+        </div>
+        <div>
+            <input type="button" value="Mostrar Faixa Etária." onclick="calcularIdade();">
+            <label for="resultado">Você está na faixa etária:</label>
+            <input type="text" name="result" id="resultado">
+        </div>
     </form>
-
+    <script src="./javaScript/scriptIdade.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calcule sua Média.</h1>
+    <form action="./../AtividadeMedia/index.html" method="GET" name="formMedia">
+        <div>
+            <label for="idnota1">Digite a primeira nota:</label>
+            <input type="text" name="nota1" id="idnota1" placeholder="Digite a 1º aqui...">
+        </div>
+        <div>
+            <label for="idnota2">Digite a segunda nota:</label>
+            <input type="text" name="nota2" id="idnota2" placeholder="Digite a 2º aqui...">
+        </div>
+        <div>
+            <input type="button" value="Calcular Média" onclick="calcularmedia();">
+        </div>
+        <div>
+            <label for="lmedia"> Média: <p class="pmedia"></p> </label>
+            <label for="lsitu"> Situação <p class="pmedia"></p> </label>
+        </div>
+    </form>
+    <script src="./javaScript/script.js"></script>
+</body>
+
+</html>
