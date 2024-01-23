@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade IMC</title>
+    <link rel="stylesheet" href="../AtividadeIMC/CSS/style.css">
+</head>
+
+<body>
+    <h1>Calculadora de IMC - Índice de Massa Corporal</h1>
+    <form action="../AtividadeIMC/index.html" method="GET" name="formIMC">
+        <div>
+            <label for="input-nome">Digite seu Nome:</label>
+            <input type="text" name="nome" class="input-nome">
+        </div>
+        <div>
+            <label for="input-peso">Digite seu Peso:</label>
+            <input type="text" name="peso" class="input-peso">
+        </div>
+        <div>
+            <label for="input-altura">Digite sua Altura:</label>
+            <input type="text" name="altura" class="input-altura">
+        </div>
+        <input type="button" value="Calcular IMC" onclick="calcularIMC();">
+        <p class="resultado"></p>
+    </form>
+</body>
+
+</html>
