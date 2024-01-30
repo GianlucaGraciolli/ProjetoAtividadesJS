@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade IMC</title>
     <link rel="stylesheet" href="../AtividadeIMC/CSS/style.css">
+    <script src="../AtividadeIMC/javaScript/script2.js" defer></script>
 </head>
 
 <body>
     <h1>Calculadora de IMC - Índice de Massa Corporal</h1>
-    <form action="../AtividadeIMC/index.html" method="GET" name="formIMC">
+    <form action="../AtividadeIMC/index.html" method="POST" name="formIMC">
         <div>
             <label for="input-nome">Digite seu Nome:</label>
             <input type="text" name="nome" class="input-nome">
@@ -24,7 +25,7 @@
             <label for="input-altura">Digite sua Altura:</label>
             <input type="text" name="altura" class="input-altura">
         </div>
-        <input type="button" value="Calcular IMC" onclick="calcularIMC();">
+        <input type="button" class="btn-calcular" value="Calcular IMC"">
         <p class="resultado"></p>
     </form>
 </body>

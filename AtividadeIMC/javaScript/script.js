@@ -1,10 +1,11 @@
 function calcularIMC(){
 let nomeusuario = document.querySelector('.input-nome').value;
-let pesousuario = document.querySelector('.input-peso').value;
-let alturausuario = document.querySelector('input-altura').value;
+let pesousuario = parseFloat(document.querySelector('.input-peso').value.replace(',','.'));
+let alturausuario = parseFloat(document.querySelector('.input-altura').value.replace(',','.'));
 
-let resultadoIMC = pesousuario * alturausuario^2;
+let resultadoIMC = (pesousuario / alturausuario**2).toFixed(2);
 let grau, nivel;
+console.log(resultadoIMC);
 
 if (resultadoIMC < 18.5) {
     grau = 0;
